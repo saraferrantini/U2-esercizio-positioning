@@ -170,6 +170,24 @@ header nav li a::before {
 }
 
 /* MAIN */
+/* ☑️ ESERCIZIO 2 */
+
+.underline {
+  position: relative; /* Per consentire il posizionamento relativo */
+  display: block; /* Per occupare lo spazio come un blocco */
+  opacity: 0.7; /* Opacità della striscia */
+}
+
+.underline::after {
+  content: ""; /* Aggiungi un'elemento fittizio */
+  position: absolute; /* Posizionamento assoluto rispetto all'elemento genitore */
+  bottom: -5px; /* Posizionamento della striscia sotto il testo */
+  left: 0; /* Allinea la striscia a sinistra */
+  width: 100%; /* Occupa tutta la larghezza del contenitore */
+  height: 2px; /* Altezza della striscia */
+  background-color: black; /* Colore della striscia */
+}
+
 main {
   background-color: #fff;
   box-shadow: 0 3px 3px #444;
