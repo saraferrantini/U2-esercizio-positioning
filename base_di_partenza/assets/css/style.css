@@ -172,20 +172,18 @@ header nav li a::before {
 /* MAIN */
 /* ☑️ ESERCIZIO 2 */
 
+/* definiamo lo stile della linea */
 .underline {
-  position: relative; /* Per consentire il posizionamento relativo */
-  display: block; /* Per occupare lo spazio come un blocco */
-  opacity: 0.7; /* Opacità della striscia */
+  position: relative;
+  display: inline-block;
 }
 
-.underline::after {
-  content: ""; /* Aggiungi un'elemento fittizio */
-  position: absolute; /* Posizionamento assoluto rispetto all'elemento genitore */
-  bottom: -5px; /* Posizionamento della striscia sotto il testo */
-  left: 0; /* Allinea la striscia a sinistra */
-  width: 100%; /* Occupa tutta la larghezza del contenitore */
-  height: 2px; /* Altezza della striscia */
-  background-color: black; /* Colore della striscia */
+.underline img {
+  position: absolute;
+  bottom: -20px; /* Posizionamento verticale rispetto al testo */
+  left: 461px; /* Allineamento a sinistra */
+  width: 55%; /* Assicurati che l'immagine occupi tutta la larghezza del contenitore */
+  opacity: 0.7; /* Opacità dell'immagine */
 }
 
 main {
